@@ -17,7 +17,6 @@ with open(args.true_output_file, 'r') as f:
 
 # H2: Compare the output files
 for i, (true_out, expected_out) in enumerate(zip(true_output.split('\n'), expected_output.split('\n'))):
-    
     print(f'Test Case {i+1}:')
 
     if true_out == expected_out:
@@ -25,4 +24,4 @@ for i, (true_out, expected_out) in enumerate(zip(true_output.split('\n'), expect
     else:
         print(f'EXPECTED: \t{expected_out}')
         print(f'RECIEVED: \t{true_out}')
-    print('=' * 20)
+    print('=' * 25)
